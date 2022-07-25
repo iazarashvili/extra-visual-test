@@ -1,3 +1,5 @@
+import users from "../../fixtures/users"
+
 describe('Extra Home Page Visual Tests', function () {
     beforeEach('first settings', function () {
         cy.viewport(1920, 1080)
@@ -34,4 +36,14 @@ describe('Extra Home Page Visual Tests', function () {
         cy.wait(2000)
         cy.percySnapshot('Footer')
     })
+
+    it('Case 7: Wishlist page', function () {
+        cy.authorization(users.email, users.password)
+        cy.wait(3000)
+        cy.contains('შენახული').click()
+        cy.wait(3000)
+        cy.percySnapshot('Wishlist page')
+    })
 })
+
+

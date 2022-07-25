@@ -1,4 +1,16 @@
-version: 1
+version: 2
 snapshot:
-  widths: [375, 1366, 1920]
-  min-height: 1080 # px
+  widths:
+    - 375
+    - 1366
+    - 1920
+  minHeight: 1024
+  percyCSS: ""
+discovery:
+  allowedHostnames: []
+  disallowedHostnames: []
+  networkIdleTimeout: 100
+upload:
+  files: "**/*.{png,jpg,jpeg}"
+  ignore: ""
+  stripExtensions: false
