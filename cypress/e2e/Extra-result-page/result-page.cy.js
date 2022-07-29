@@ -17,7 +17,7 @@ describe('Extra result page test', function() {
 
     })
 
-    it('Case 1: Empty result Page', function() {
+    it('Case 2: Empty result Page', function() {
         cy.get('[formcontrolname="searchKeyword"]:eq(0)').type('jdskaljd;ajda{enter}')
         cy.wait(3000)
         cy.percySnapshot('Result Page')
