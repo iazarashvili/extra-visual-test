@@ -9,7 +9,7 @@ describe('Extra user pages', function () {
         cy.authorization(users.email, users.password)
         cy.wait(3000)
     })
-    it.only('Case 1: User orders page', function () {
+    it('Case 1: User orders page', function () {
         cy.visit(Cypress.env('profile_orders'))
         cy.wait(4000)
         cy.url().should('include', 'user/profile/orders')

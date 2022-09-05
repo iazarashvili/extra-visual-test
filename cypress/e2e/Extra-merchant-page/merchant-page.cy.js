@@ -7,7 +7,7 @@ describe('Extra Merchant page', function () {
     })
 
     it('Case 1: Extra merchant page', function () {
-        cy.url().should('include', '/seller/istore-test/75')
+        cy.url().should('include', '/seller/istore/75')
         cy.percySnapshot('Extra merchant page')
 
     })

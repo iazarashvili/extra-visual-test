@@ -37,7 +37,7 @@ describe('Extra Home Page Visual Tests', function () {
         cy.percySnapshot('Footer')
     })
 
-    it.only('Case 7: Wishlist page', function () {
+    it('Case 7: Wishlist page', function () {
         cy.authorization(users.email, users.password)
         cy.wait(3000)
         cy.contains('შენახული').click()
