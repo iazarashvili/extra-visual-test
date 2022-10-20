@@ -4,12 +4,12 @@ import selector from "../../support/selectors";
 describe("Extra Home Page Visual Tests", function () {
   beforeEach("first settings", function () {
     cy.viewport(1920, 1080);
-    cy.visit("https://staging.extra.ge/");
+    cy.visit(Cypress.env('base_url'));
     cy.get(selector.elements.closeCookie()).click();
     cy.wait(3000);
   });
   it("Case 1: Home page", function () {
-    cy.url().should("include", "https://staging.extra.ge/");
+      cy.url().should("include", Cypress.env('base_url'));
     cy.percySnapshot("Home page");
   });
   it("Case 2: Open Sign in form", function () {
