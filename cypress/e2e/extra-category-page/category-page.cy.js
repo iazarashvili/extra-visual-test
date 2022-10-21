@@ -3,7 +3,7 @@ import selector from "../../support/selectors";
 describe("Extra category page", function () {
   beforeEach("first settings", function () {
     cy.viewport(1920, 1080);
-    cy.visit("https://staging.extra.ge/catalog/teqnika-akhali/1");
+    cy.visit(Cypress.env('category_url'));
     cy.wait(3000);
   });
 

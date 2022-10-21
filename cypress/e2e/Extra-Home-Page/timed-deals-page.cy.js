@@ -3,7 +3,7 @@ import selector from "../../support/selectors";
 describe("Timed deals page", () => {
   beforeEach("first settings", function () {
     cy.viewport(1920, 1080);
-    cy.visit("https://staging.extra.ge/catalog/set/timed-deals/859");
+    cy.visit(Cypress.env('timed_deals_page_url'));
     cy.get(selector.elements.closeCookie()).click();
     cy.wait(4000);
   });

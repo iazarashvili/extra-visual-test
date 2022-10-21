@@ -3,7 +3,7 @@ import selector from "../../support/selectors";
 describe("Extra Merchant page", function () {
   beforeEach("first settings", function () {
     cy.viewport(1920, 1080);
-    cy.visit("https://staging.extra.ge/seller/istore/75");
+    cy.visit(Cypress.env('merchant_page_url'));
     cy.wait(3000);
     cy.get(selector.elements.closeCookie()).click();
   });
