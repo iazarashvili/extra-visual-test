@@ -17,10 +17,7 @@ describe("Extra user pages", function () {
     cy.percySnapshot("User orders page");
     cy.get("i._x_icon-arrow-right:eq(0)").click({ force: true });
     cy.wait(1000);
-<<<<<<< HEAD
-=======
     //cy.get(selector.elements.closeCookie()).click();
->>>>>>> 335062bc66798e9d01744ed9e1be042262b572db
     cy.percySnapshot("Order Detail");
   });
 
