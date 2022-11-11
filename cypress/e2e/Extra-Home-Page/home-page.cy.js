@@ -9,7 +9,7 @@ describe("Extra Home Page Visual Tests", function () {
     cy.wait(3000);
   });
   it("Case 1: Home page", function () {
-      cy.url().should("include", Cypress.env('base_url'));
+    cy.url().should("include", Cypress.env('base_url'));
     cy.percySnapshot("Home page");
   });
   it("Case 2: Open Sign in form", function () {
